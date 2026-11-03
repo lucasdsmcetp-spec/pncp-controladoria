@@ -6,7 +6,7 @@ Projeto final do módulo 2 – Gestão de Dados com Arquitetura Moderna (SENAI/S
 **Autor:** Lucas Mendes
 **Painel online:** [Abrir o dashboard no navegador](https://app.powerbi.com/view?r=eyJrIjoiMzY3MTRmYmEtZTZmNy00MDUyLWJhYmUtYmFjOTM1N2JiMTI2IiwidCI6ImJkYmZhYWY1LTE1MjctNDdhOC05NzM0LTQyMDVmNDQ4YTRmZSJ9)
 <img src="docs/img/capa.jpg" alt="Capa do painel Gasto Público Federal 2025" width="900">
-**Vídeo de apresentação (até 7 min):** [PREENCHER: link do Google Drive com permissão de leitor]
+**Vídeo de apresentação (até 7 min):** [https://drive.google.com/file/d/13eCCS8qpweOTrSd5IdJu80Z_BDV2mzqX/view?usp=sharing]
 
 ## Resultado em números
 
