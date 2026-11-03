@@ -4,6 +4,8 @@ Pipeline completo: dados brutos (CSV) → limpeza em Python → banco MySQL (mod
 Projeto final do módulo 2 – Gestão de Dados com Arquitetura Moderna (SENAI/SC).
 
 **Autor:** Lucas Mendes
+**Painel online:** [Abrir o dashboard no navegador](https://app.powerbi.com/view?r=eyJrIjoiMzY3MTRmYmEtZTZmNy00MDUyLWJhYmUtYmFjOTM1N2JiMTI2IiwidCI6ImJkYmZhYWY1LTE1MjctNDdhOC05NzM0LTQyMDVmNDQ4YTRmZSJ9)
+<img src="docs/img/capa.jpg" alt="Capa do painel Gasto Público Federal 2025" width="900">
 **Vídeo de apresentação (até 7 min):** [PREENCHER: link do Google Drive com permissão de leitor]
 
 ## Resultado em números
@@ -114,19 +116,51 @@ Cada resposta existe em SQL (`sql/02_perguntas.sql`) e no dashboard, com os mesm
 
 ## Dashboard (Power BI)
 
-- 6 páginas, uma por pergunta, cada uma com uma conclusão.
+Painel online: [abrir no navegador](https://app.powerbi.com/view?r=eyJrIjoiMzY3MTRmYmEtZTZmNy00MDUyLWJhYmUtYmFjOTM1N2JiMTI2IiwidCI6ImJkYmZhYWY1LTE1MjctNDdhOC05NzM0LTQyMDVmNDQ4YTRmZSJ9)
+
+- Capa de navegação e 6 páginas, uma por pergunta, cada uma com uma conclusão.
 - **15 medidas DAX** em tabela própria, organizadas em pastas P1 a P6 (usam `CALCULATE`, `DIVIDE`, `RANKX`, `TOPN`, `SUMX`, `ALLSELECTED`, `VAR/RETURN`).
 - **Calendário em DAX** com limites vindos dos dados, colunas Ano, Mês, Ano-Mês e ordenação por número, marcado como tabela de datas, ligado a `data_publicacao` (relação ativa) e `data_homologacao` (inativa).
-- Navegação: [CONFIRMAR: descrever o menu retrátil com botões e bookmarks].
-- Dica de ferramenta personalizada: [CONFIRMAR: descrever a página de tooltip].
+- Navegação: menu lateral com botões para as 6 páginas e destaque da página ativa. [CONFIRMAR: menu retrátil e bookmarks]
+- Dica de ferramenta personalizada: [CONFIRMAR: descrever a página de tooltip]
 - Princípios de design aplicados: contraste, repetição (mesmo layout em todas as páginas), alinhamento e proximidade.
+
+### 1. Economia: quanto o governo economizou?
+Nos itens comparáveis (89,08% dos itens), a economia é de 14,46%, ou R$ 992,9 milhões.
+
+<img src="docs/img/economia.jpg" alt="Página Economia" width="900">
+
+### 2. Fornecedores: quem concentra o orçamento?
+Os 10 maiores fornecedores ficam com 41,43% do volume. O líder, NOW SEGUROS SA, tem 13,18%.
+
+<img src="docs/img/fornecedores.jpg" alt="Página Fornecedores" width="900">
+
+### 3. Modalidade: qual economiza mais e qual movimenta mais?
+O Pregão Eletrônico economiza 24,02%. A Concorrência Eletrônica movimenta 58,43% do volume.
+
+<img src="docs/img/modalidade.jpg" alt="Página Modalidade" width="900">
+
+### 4. Ciclo de compras: onde as compras demoram mais?
+Ciclo médio de 48,09 dias e máximo de 611. O órgão mais lento é a UFCG, com 266,3 dias.
+
+<img src="docs/img/ciclo.jpg" alt="Página Ciclo de Compras" width="900">
+
+### 5. Regional: onde se gasta mais e onde há mais desconto?
+O Centro-Oeste concentra 44,3% do volume, e o Norte tem a maior economia (21,4%).
+
+<img src="docs/img/regional.jpg" alt="Página Regional" width="900">
+
+### 6. Perfil do gasto: bens, serviços ou obras?
+Obras e engenharia têm 60,82% do volume, Serviços 36,56% e Bens 2,63%.
+
+<img src="docs/img/perfil.jpg" alt="Página Perfil do Gasto" width="900">
 
 ## Planejamento e lições aprendidas
 
 ![Sprints](docs/img/sprints.png)
 
-- Ferramenta usada: [PREENCHER]
-- O que foi entregue em cada Sprint: [PREENCHER]
+- Ferramenta usada: excel
+- O que foi entregue em cada Sprint: passo a passo do pipeline e as datas de início e conclusão
 
 **Melhorias futuras**
 - Automatizar a atualização dos dados direto da API do PNCP.
@@ -135,6 +169,4 @@ Cada resposta existe em SQL (`sql/02_perguntas.sql`) e no dashboard, com os mesm
 - Publicar o relatório no Power BI Service, com atualização agendada.
 - Separar serviços continuados de eventuais no perfil do gasto.
 
-## Discordâncias das regras do enunciado
 
-[PREENCHER: se discordou de alguma regra, descreva aqui; se não, escreva "Nenhuma".]
